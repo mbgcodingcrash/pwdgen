@@ -1,5 +1,9 @@
 
-
+var passLengthNumber = "";
+var passUppercase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+var passLowercase = "abcdefghijklmnopqrstuvwxyz";
+var specialCharacters ="!@#$%^&*?"
+var numericIncluded = ""
 
 
 
@@ -16,11 +20,14 @@ function generatePassword() {
     window.alert("Please choose a value between 8-128")
   return passLength}
 
+
   
    //Confirm Inclusion of UpperCase 
   var passUppercase= window.confirm("Include Uppercase letters ?")
 
   // if passUppercase = true then add upperCase
+
+      if (passUppercase = true) {}
 
   //Confirm Inclusion of lowercase
   var passLowercase= window.confirm("Include Lowercase letters ?")
@@ -46,10 +53,7 @@ function generatePassword() {
 
   var finalPass = Math.floor (Math.random() * passLength)
   
-
-
-//Return randomized password
-  return finalPass
+ 
   }
 
 // Get references to the #generate element
